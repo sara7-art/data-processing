@@ -1,4 +1,4 @@
-package com.pluralsight.stream;
+package com.pluralsight.streams;
 
 public class Programm {
 }

@@ -1,5 +1,7 @@
 package com.pluralsight.loops;
 
+import com.pluralsight.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -48,31 +50,4 @@ public class Program {
                 System.out.println(person.getFullName() + " - Age: " + person.getAge());
             }
         }
-
-        // Step 3 - Calculate average, oldest, youngest
-        int totalAge = 0;
-        int oldestAge = people.get(0).getAge();
-        int youngestAge = people.get(0).getAge();
-
-        for (Person person : people) {
-
-            totalAge += person.getAge();
-
-            if (person.getAge() > oldestAge) {
-                oldestAge = person.getAge();
-            }
-
-            if (person.getAge() < youngestAge) {
-                youngestAge = person.getAge();
-            }
-        }
-
-        double averageAge = (double) totalAge / people.size();
-
-        System.out.println("\nAverage Age: " + averageAge);
-        System.out.println("Oldest Age: " + oldestAge);
-        System.out.println("Youngest Age: " + youngestAge);
-
-        scanner.close();
     }
-}

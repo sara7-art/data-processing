@@ -1,4 +1,4 @@
-package com.pluralsight.loops;
+package com.pluralsight;
 
 public class Person {
     private String firstName;
@@ -36,5 +36,5 @@ public class Person {
     }
     public String getFullName() {
         return firstName + " " + lastName;
-
+    }
 }
